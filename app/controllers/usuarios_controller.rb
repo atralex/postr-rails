@@ -9,7 +9,7 @@ class UsuariosController < ApplicationController
 
     if usuario
       # Inicio de sesión exitoso
-      render json: { message: 'Inicio de sesión exitoso', usuario: usuario }, status: :ok
+      render json: { message: 'Inicio de sesión exitoso', usuario: usuario, status: 200 }
     else
       # Credenciales inválidas
       render json: { message: 'Credenciales inválidas' }, status: :unauthorized
